@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mortgage.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navigation-main-container">
+                <div class="logo">
+                    <img src="../images/logo.png">
+                    <span>MRK Bank</span>
+                </div>
+                <ul class="navigation-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="mortgage.html">Mortgage Calculator</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="page-title">Mortgage Calculator</h1>
+            <p class="page-description">Calculate your mortgage payments and check your loan eligibility.</p>
+            <form id="mortgage-form">
+                <div class="form-group">
+                    <label for="loanAmount">Loan Amount (£):</label>
+                    <input type="number" id="loanAmount" placeholder="Enter loan amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="loanTerm">Loan Term (years):</label>
+                    <input type="number" id="loanTerm" placeholder="Enter loan term in years" required>
+                </div>
+                <div class="form-group">
+                    <label for="monthlyIncome">Monthly Income (£):</label>
+                    <input type="number" id="monthlyIncome" placeholder="Enter your monthly income" required>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="calculateBtn" class="btn-primary">Calculate</button>
+                </div>
+            </form>
+    
+            <div id="results" class="results hidden">
+                <h2>Results</h2>
+                <p><strong>Monthly Payment:</strong> £<span id="monthlyPayment"></span></p>
+                <p><strong>Eligibility Status:</strong> <span id="eligibilityStatus"></span></p>
+                <p><strong>Total Payment:</strong> £<span id="totalPayment"></span></p>
+                <p><strong>Total Interest:</strong> £<span id="totalInterest"></span></p>
+                <p><strong>Remaining Income:</strong> £<span id="remainingIncome"></span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 MRK Bank. All rights reserved.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
